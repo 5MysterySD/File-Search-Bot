@@ -18,7 +18,7 @@ async def start(bot, cmd):
                 if user.status == "kicked":
                     await bot.send_message(
                         chat_id=cmd.from_user.id,
-                        text="Sorry Sir, You are Banned to use me.",
+                        text="__Sorry Sir, You are Banned to use me.__",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -27,14 +27,14 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**⛔ Please Join My Updates Channel to use this Bot! ⛔** \n\n ⚠️ __This Bot is Only Made to be Used by Channel Subscribers to Ensure No Overload.__ ⚠️",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                                InlineKeyboardButton("⚡ Join Updates Channel ⚡", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton(" 🔄 Try Again 🔄", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -56,8 +56,8 @@ async def start(bot, cmd):
                 file_caption = files.caption
                 buttons = [
                     [
-                        InlineKeyboardButton('Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('More Movies', url='https://t.me/FCfilmcornerfc')
+                        InlineKeyboardButton('Search Again 🔄', switch_inline_query_current_chat=''),
+                        InlineKeyboardButton('⚡Updates Channel⚡', url='https://t.me/FuZionX')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -76,7 +76,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                        InlineKeyboardButton("⚡ Join Updates Channel ⚡", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -89,11 +89,11 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("more movies", url="https://t.me/FCfilmcornerfc")
+                        InlineKeyboardButton("Search Here 🔄", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("⚡Updates Channel⚡", url="https://t.me/FuZionX")
                     ],
                     [
-                        InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("🛂 About 🛂", callback_data="about")
                     ]
                 ]
             )
@@ -183,8 +183,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/jns_bots'),
-            InlineKeyboardButton('Update Group', url='https://t.me/jns_fc_bots')
+            InlineKeyboardButton('⚡Updates Channel⚡', url='https://t.me/FuZionX'),
+            InlineKeyboardButton('⚡Update Group⚡', url='https://t.me/FuZionXGroup')
         ]
         ]
-    await query.message.edit(text="<b>Developer : <a href='https://t.me/jintons'>JNS</a> 🥳\nLanguage : <code>Python3</code> 🤠\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>💫\nMovies : <a href='https://t.me/FCfilmcornerfc'>FILM CORNER</a>☀️\nUpdate Channel : <a href='https://t.me/jns_bots'>ＪƝ⟆ ᗷ〇Ƭ⟆</a> 🌟</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    await query.message.edit(text="<b>🛂 Developer : <a href='https://t.me/'></a> \n🔠 Language : <code>Python3</code> \n🔰 Library : <a href='https://docs.pyrogram.org/'>Pyrogram Asyncio</a>\n⚡ Updates Channel : <a href='https://t.me/FuZionX'>FUZIONX</a>\n⚡ Updates Group : <a href='https://t.me/FuZionXGroup'>FUZIONX GROUP</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
