@@ -1,6 +1,7 @@
-# Modified Version Of [Media Search bot](https://github.com/Mahesh0253/Media-Search-bot)
+# Modified Version 2.0
+## Modified Version Of [Media Search bot](https://github.com/Mahesh0253/Media-Search-bot)
 
-## Added Features
+## Already Added Features
 * Index command to index all the files in a given channel (No USER_SESSION Required).
 * Ability to Index Public Channels without being admin.
 * Support Auto-Filter (Both in PM and in Groups)
@@ -70,9 +71,7 @@ logger - Get log file
 
 
 ## Support
-Contact Me On [Telegram](https://t.me/jintons)
-
-[Update Channel](https://t.me/jns_fc_bots)
+Contact Me On [Telegram](https://t.me/FuZionX)
 
 ## License
 Code released under [The GNU General Public License](LICENSE).
