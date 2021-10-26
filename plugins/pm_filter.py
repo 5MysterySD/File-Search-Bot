@@ -26,11 +26,11 @@ async def filter(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
-                text="** ⚠️ Please Join My Updates Channel to use this Bot!**",
+                text="**⛔ Please Join My Updates Channel to use this Bot! ⛔** \n\n ⚠️ __This Bot is Only Made to be Used by Channel Subscribers to Ensure No Overload.__ ⚠️",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)
+                            InlineKeyboardButton("⚡ Join Updates Channel ⚡", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -78,7 +78,8 @@ async def filter(client, message):
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             await message.reply_text(
-                f"<b>Here is What I Found In My Database For Your Query 👉 `{search}`  ­  ­  ­ </b> \n\n `IF YOU DIDN'T FIND ANY RESULTS,THEN FOLLOW BELOW FORMAT` \n\n**MOVIE NAME YEAR LANGUAGE**",
+                f"<b><i><u>Here is What I Found In My Database<\u><\i>\n⚡️<b>Query :</b> {search} \n\n‼️ 𝐅𝐢𝐫𝐬𝐭 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞 @FuZionX ‼️\n\n<b>Tips : </b>\n🔰<i>Open Me in PM, or Use Me Inline For Your Queries !!\n\n❣Click On 𝗦𝘁𝗮𝗿𝘁 After Opening The Bot . .❣</i>",
+                parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
@@ -94,7 +95,8 @@ async def filter(client, message):
         )
 
         await message.reply_text(
-                f"<b>Here is What I Found In My Database For Your Query  👉 `{search}`­  ­  ­  ­  ­  </b> \n\n `IF YOU DIDN'T FIND ANY RESULTS,THEN FOLLOW BELOW FORMAT` \n\n**MOVIE NAME YEAR LANGUAGE**",
+                f"<i><u>Here is What I Found In My Database<\u><\i>\n⚡️<b>Query :</b> {search} \n\n‼️ 𝐅𝐢𝐫𝐬𝐭 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞 @FuZionX ‼️\n\n<b>Tips : </b>\n🔰<i>Open Me in PM, or Use Me Inline For Your Queries !!\n\n❣Click On 𝗦𝘁𝗮𝗿𝘁 After Opening The Bot . .❣</i>",
+                parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )    
 
@@ -133,7 +135,8 @@ async def group(client, message):
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             await message.reply_text(
-                f"<b>Here is What I Found In My Database For Your Query `{search}` ­  ­  ­  ­  </b> \n\n `IF YOU DIDN'T FIND ANY RESULTS,THEN FOLLOW BELOW FORMAT` \n\n**MOVIE NAME YEAR LANGUAGE**",
+                f"<i><u>Here is What I Found In My Database<\u><\i>\n⚡️<b>Query :</b> {search} \n\n‼️ 𝐅𝐢𝐫𝐬𝐭 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞 @FuZionX ‼️\n\n<b>Tips : </b>\n🔰<i>Open Me in PM, or Use Me Inline For Your Queries !!\n\n❣Click On 𝗦𝘁𝗮𝗿𝘁 After Opening The Bot . .❣</i>",
+                parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
             return
@@ -149,7 +152,8 @@ async def group(client, message):
         )
 
         await message.reply_text(
-                f"<b>Here is What I Found In My Database For Your Query `{search}` ‌‌‌‌‎ ­  ­  ­  ­  ­  </b> \n\n `IF YOU DIDN'T FIND ANY RESULTS,THEN FOLLOW BELOW FORMAT` \n\n**MOVIE NAME YEAR LANGUAGE** ",
+                f"<i><u>Here is What I Found In My Database<\u><\i>\n⚡️<b>Query :</b> {search} \n\n‼️ 𝐅𝐢𝐫𝐬𝐭 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞 @FuZionX ‼️\n\n<b>Tips : </b>\n🔰<i>Open Me in PM, or Use Me Inline For Your Queries !!\n\n❣Click On 𝗦𝘁𝗮𝗿𝘁 After Opening The Bot . .❣</i>",
+                parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
 
@@ -255,11 +259,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('Update Channel', url='https://t.me/jns_bots'),
-                    InlineKeyboardButton('Update Group', url='https://t.me/jns_fc_bots')
+                    InlineKeyboardButton('⚡Updates Channel⚡', url='https://t.me/FuZionX'),
+                    InlineKeyboardButton('⚡Update Group⚡', url='https://t.me/FuZionXGroup')
                 ]
                 ]
-            await query.message.edit(text="<b>Developer : <a href='https://t.me/jintons'>JNS</a> 🥳\nLanguage : <code>Python3</code> 🤠\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>💫\nMovies : <a href='https://t.me/FCfilmcornerfc'>FILM CORNER</a>☀️\nUpdate Channel : <a href='https://t.me/jns_bots'>ＪƝ⟆ ᗷ〇Ƭ⟆</a> 🌟</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+            await query.message.edit(text="<b>🛂 Developer : <a href='https://t.me/'></a> \n🔠 Language : <code>Python3</code> \n🔰 Library : <a href='https://docs.pyrogram.org/'>Pyrogram Asyncio</a>\n⚡ Updates Channel : <a href='https://t.me/FuZionX'>FUZIONX</a>\n⚡ Updates Group : <a href='https://t.me/FuZionXGroup'>FUZIONX GROUP</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
 
@@ -272,8 +276,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 caption = files.caption
                 buttons = [
                     [
-                        InlineKeyboardButton('More Movies', url='https://t.me/FCfilmcornerfc'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/jns_bots')
+                        InlineKeyboardButton('⚡Updates Channel⚡', url='https://t.me/FuZionX'),
+                        InlineKeyboardButton('⚡Update Group⚡', url='https://t.me/FuZionXGroup')
                     ]
                     ]
                 
@@ -296,8 +300,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 caption = files.caption
                 buttons = [
                     [
-                        InlineKeyboardButton('More Movies', url='https://t.me/FCfilmcornerfc'),
-                        InlineKeyboardButton('Update Channel', url='https://t.me/jns_bots')
+                        InlineKeyboardButton('⚡Updates Channel⚡', url='https://t.me/FuZionX'),
+                        InlineKeyboardButton('⚡Update Group⚡', url='https://t.me/FuZionXGroup')
                     ]
                     ]
                 
