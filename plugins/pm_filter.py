@@ -95,7 +95,7 @@ async def filter(client, message):
         )
 
         await message.reply_text(
-                f"<i><u>Here is What I Found In My Database<\u><\i>\n⚡️<b>Query :</b> {search} \n\n‼️ 𝐅𝐢𝐫𝐬𝐭 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞 @FuZionX ‼️\n\n<b>Tips : </b>\n🔰<i>Open Me in PM, or Use Me Inline For Your Queries !!\n\n❣Click On 𝗦𝘁𝗮𝗿𝘁 After Opening The Bot . .❣</i>",
+                f"<i><u>Here is What I Found In My Database</u></i>\n⚡️<b>Query :</b> {search} \n\n‼️ 𝐅𝐢𝐫𝐬𝐭 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞 @FuZionX ‼️\n\n<b>Tips : </b>\n🔰<i>Open Me in PM, or Use Me Inline For Your Queries !!\n\n❣Click On 𝗦𝘁𝗮𝗿𝘁 After Opening The Bot . .❣</i>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )    
@@ -135,7 +135,7 @@ async def group(client, message):
                 [InlineKeyboardButton(text="📃 Pages 1/1",callback_data="pages")]
             )
             await message.reply_text(
-                f"<i><u>Here is What I Found In My Database<\u><\i>\n⚡️<b>Query :</b> {search} \n\n‼️ 𝐅𝐢𝐫𝐬𝐭 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞 @FuZionX ‼️\n\n<b>Tips : </b>\n🔰<i>Open Me in PM, or Use Me Inline For Your Queries !!\n\n❣Click On 𝗦𝘁𝗮𝗿𝘁 After Opening The Bot . .❣</i>",
+                f"<i><u>Here is What I Found In My Database</u></i>\n⚡️<b>Query :</b> {search} \n\n‼️ 𝐅𝐢𝐫𝐬𝐭 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞 @FuZionX ‼️\n\n<b>Tips : </b>\n🔰<i>Open Me in PM, or Use Me Inline For Your Queries !!\n\n❣Click On 𝗦𝘁𝗮𝗿𝘁 After Opening The Bot . .❣</i>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
@@ -152,7 +152,7 @@ async def group(client, message):
         )
 
         await message.reply_text(
-                f"<i><u>Here is What I Found In My Database<\u><\i>\n⚡️<b>Query :</b> {search} \n\n‼️ 𝐅𝐢𝐫𝐬𝐭 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞 @FuZionX ‼️\n\n<b>Tips : </b>\n🔰<i>Open Me in PM, or Use Me Inline For Your Queries !!\n\n❣Click On 𝗦𝘁𝗮𝗿𝘁 After Opening The Bot . .❣</i>",
+                f"<i><u>Here is What I Found In My Database</u></i>\n⚡️<b>Query :</b> {search} \n\n‼️ 𝐅𝐢𝐫𝐬𝐭 𝐒𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞 @FuZionX ‼️\n\n<b>Tips : </b>\n🔰<i>Open Me in PM, or Use Me Inline For Your Queries !!\n\n❣Click On 𝗦𝘁𝗮𝗿𝘁 After Opening The Bot . .❣</i>",
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
