@@ -72,7 +72,7 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**⛔ Please Join My Updates Channel to use this Bot! ⛔** \n\n ⚠️ __This Bot is Only Made to be Used by Channel Subscribers to Ensure No Overload.__ ⚠️",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -84,7 +84,7 @@ async def start(bot, cmd):
     else:
         await cmd.reply_text(
             START_MSG,
-            parse_mode="Markdown",
+            parse_mode="html",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
