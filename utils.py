@@ -55,9 +55,9 @@ async def save_file(media):
         try:
             await file.commit()
         except DuplicateKeyError:
-            logger.warning(media.file_name + " is already saved in database")
+            logger.warning(f"{media.file_name} is already saved in database")
         else:
-            logger.info(media.file_name + " is saved in database")
+            logger.info(f"{media.file_name} is saved in database")
 
 
 async def get_search_results(query, file_type=None, max_results=10, offset=0):
@@ -131,7 +131,7 @@ async def is_subscribed(bot, query):
     except Exception as e:
         logger.exception(e)
     else:
-        if not user.status == 'kicked':
+        if user.status != 'kicked':
             return True
 
     return False
